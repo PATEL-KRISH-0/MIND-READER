@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    padding: 2rem;
+}
+
+.logo img {
+    width: 20rem;
+}
+
+.some-Text {
+    font-size: 3rem;
+    margin: 3rem 0rem;
+}
+
+.enter-Number {
+    font-size: 3rem;
+    margin: 1rem 0rem;
+}
+
+.number {
+    color: black;
+    width: 7rem;
+    font-size: 2rem;
+    height: 4rem;
+    padding: 1rem;
+    border: 2px solid blue;
+}
+
+.submit-Btn {
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    color: black;
+    margin: 2rem 0rem;
+    font-weight: bold;
+}
+
+.popup {
+    padding: 2rem;
+    margin-top: 4rem;
+    transition: all .2s;
+    position: absolute;
+    top: -10rem;
+    transform: scale(0.1);
+    visibility: hidden;
+    background: white;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column;
+    width: 46rem;
+    height: 45rem;
+
+    box-shadow: 0px 0px 17px 4px rgba(245, 245, 245, 0.73);
+    -webkit-box-shadow: 0px 0px 17px 4px rgba(245, 245, 245, 0.73);
+    -moz-box-shadow: 0px 0px 17px 4px rgba(245, 245, 245, 0.73);
+}
+
+.popup-Test {
+    font-size: 3rem;
+    margin: 3rem;
+    color: black;
+}
+
+.popvisi {
+    visibility: visible;
+    transform: scale(1);
+    top: 0rem;
+}
+
+.loding {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    top: 0px;
+    height: 100vh;
+
+}
+
+.ok {
+    align-self: center;
+    justify-self: center;
+    margin-top: 3rem;
+    font-size: 3rem;
+    padding: 3rem 4rem;
+    position: relative;
+    top: 50px;
+    /* color: black; */
+    border-radius: 50%;
+    font-weight: bold;
+    background: blue;
+}
+
+.disnone {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 40%;
+    }
+    .loding img {
+        width: 15rem;
+    }
+    
+}
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 30%;
+    }
+    .loding img {
+        width: 10rem;
+    }
+    
+}
